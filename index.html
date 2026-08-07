@@ -14,8 +14,12 @@
         h2 { color: var(--green); border-bottom: 2px solid var(--gold); padding-bottom: 5px; margin-top: 0; }
         ul { padding-left: 20px; }
         li { margin-bottom: 8px; }
-        .cta-btn { display: inline-block; background: var(--green); color: white; padding: 12px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px; }
-        .cta-btn:hover { background: var(--gold); color: var(--text); }
+        .btn-container { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+        .cta-btn { display: inline-block; background: var(--green); color: white; padding: 12px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; text-align: center; }
+        .cta-btn.gold { background: var(--gold); color: #000; }
+        .cta-btn.pay { background: #00D632; color: white; } /* Cash App green */
+        .cta-btn.venmo { background: #008CFF; color: white; } /* Venmo blue */
+        .cta-btn:hover { opacity: 0.9; }
         footer { text-align: center; font-size: 0.85rem; color: #555; padding: 20px 0; border-top: 1px solid #ddd; margin-top: 30px; }
     </style>
 </head>
@@ -33,20 +37,26 @@
     </section>
 
     <section id="services">
-        <h2>Services & Offerings</h2>
+        <h2>Services & Consultations</h2>
         <ul>
             <li><strong>Emergency Property Rescue:</strong> Clearing overgrowth, stripping toxic synthetic weed barriers, and restoring mineral-rich soil beds.</li>
             <li><strong>Canopy & Precision Pruning:</strong> Opening tropical canopies for airflow and revealing mature structural beauty.</li>
             <li><strong>"Walk-the-Land" Consultations:</strong> Strategic property layouts designed to maximize food production while reducing physical labor.</li>
         </ul>
-        <a href="mailto:contact@goldenhandz.org" class="cta-btn">Book a Consultation</a>
+        <div class="btn-container">
+            <a href="https://cash.app/$GoldenHandz333" class="cta-btn pay" target="_blank">Book via Cash App ($GoldenHandz333)</a>
+            <a href="https://venmo.com/GoldenHandz333" class="cta-btn venmo" target="_blank">Book via Venmo (@GoldenHandz333)</a>
+        </div>
     </section>
 
-    <section id="monetize">
-        <h2>Support & Digital Soulutions</h2>
-        <p>Explore our open-source agricultural logs or support sovereign land stewardship directly:</p>
-        <p><strong>Payment Handles:</strong> Venmo & CashApp accepted upon service completion.</p>
-        <a href="https://ko-fi.com" class="cta-btn" style="background: var(--gold); color: #000;">Support Our Work on Ko-fi</a>
+    <section id="digital-products">
+        <h2>Digital Guides & Open-Source Media</h2>
+        <p>Access our sovereign land stewardship blueprints, soil rehabilitation guides, and agricultural logs:</p>
+        <div class="btn-container">
+            <a href="https://payhip.com/GoldenHandz" class="cta-btn gold" target="_blank">Download Guides on Payhip</a>
+            <a href="https://gumroad.com/GoldenHandz" class="cta-btn gold" target="_blank">Explore Store on Gumroad</a>
+            <a href="https://ko-fi.com/GoldenHandz" class="cta-btn gold" target="_blank">Support on Ko-fi</a>
+        </div>
     </section>
 
     <footer>
