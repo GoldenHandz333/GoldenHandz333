@@ -14,12 +14,23 @@
         h2 { color: var(--green); border-bottom: 2px solid var(--gold); padding-bottom: 5px; margin-top: 0; }
         ul { padding-left: 20px; }
         li { margin-bottom: 8px; }
+        
+        /* Gallery Styles */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 15px; }
+        .gallery-card { border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; background: #fafafa; }
+        .gallery-card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+        .gallery-card .caption { padding: 12px; font-size: 0.9rem; color: #333; }
+
+        /* Blog Post Styles */
+        .blog-post { border-left: 4px solid var(--gold); padding-left: 15px; margin-bottom: 20px; }
+        .blog-date { font-size: 0.8rem; color: #666; font-weight: bold; }
+        .blog-title { margin: 5px 0; color: var(--green); }
+
         .btn-container { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
         .cta-btn { display: inline-block; background: var(--green); color: white; padding: 12px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; text-align: center; }
         .cta-btn.gold { background: var(--gold); color: #000; }
-        .cta-btn.pay { background: #00D632; color: white; } /* Cash App green */
-        .cta-btn.venmo { background: #008CFF; color: white; } /* Venmo blue */
-        .cta-btn:hover { opacity: 0.9; }
+        .cta-btn.pay { background: #00D632; color: white; }
+        .cta-btn.venmo { background: #008CFF; color: white; }
         footer { text-align: center; font-size: 0.85rem; color: #555; padding: 20px 0; border-top: 1px solid #ddd; margin-top: 30px; }
     </style>
 </head>
@@ -34,6 +45,44 @@
     <section id="mission">
         <h2>Mission Statement</h2>
         <p>Bridging physical land stewardship, microclimate intelligence, and open-source media on the Big Island of Hawaiʻi. GoldenHandz is dedicated to reclaiming local food independence, revitalizing soil biology, and transforming overgrown spaces into low-maintenance, high-yield ecosystems. We honor pre-existing structural assets and work in harmony with Pacific volcanic microclimates to cultivate mind, body, spirit, and land.</p>
+    </section>
+
+    <section id="work">
+        <h2>Field Work & Transformations</h2>
+        <p>A look at recent land restoration and soil rejuvenation projects across Pāhoa and Hilo:</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="images/project1.jpg" alt="Property Rescue Before and After" onerror="this.src='https://via.placeholder.com/400x220?text=Project+Photo+1'">
+                <div class="caption">
+                    <strong>Overgrowth Clearance & Mineral Bed Setup</strong><br>
+                    Stripped back invasive blankets and re-established native mineral-rich soil beds.
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="images/project2.jpg" alt="Precision Canopy Pruning" onerror="this.src='https://via.placeholder.com/400x220?text=Project+Photo+2'">
+                <div class="caption">
+                    <strong>Precision Canopy Airflow Pruning</strong><br>
+                    Opened dense tropical canopy to improve air circulation and reveal natural trunk structure.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Weekly Journal & Agri-Media Updates</h2>
+        
+        <article class="blog-post">
+            <div class="blog-date">WEEK 1 • AUGUST 2026</div>
+            <h3 class="blog-title">Reclaiming Soil Vitality in Pacific Microclimates</h3>
+            <p>Managing soil biology on lava rock requires working with natural organic layers rather than synthetic weed barriers. In this post, we discuss strategies for establishing low-maintenance edible layouts that thrive under Big Island rain patterns...</p>
+        </article>
+
+        <article class="blog-post">
+            <div class="blog-date">ARCHIVE</div>
+            <h3 class="blog-title">Organic Property Rescue Framework</h3>
+            <p>Our core 3-step strategy for evaluating overgrown parcels, salvaging structural trees, and minimizing future labor.</p>
+        </article>
     </section>
 
     <section id="services">
@@ -54,7 +103,7 @@
         <p>Access our sovereign land stewardship blueprints, soil rehabilitation guides, and agricultural logs:</p>
         <div class="btn-container">
             <a href="https://payhip.com/GoldenHandz" class="cta-btn gold" target="_blank">Download Guides on Payhip</a>
-            <a href="https://gumroad.com/GoldenHandz" class="cta-btn gold" target="_blank">Explore Store on Gumroad</a>
+            <a href="https://goldenhandz333.gumroad.com" class="cta-btn gold" target="_blank">Explore Store on Gumroad</a>
             <a href="https://ko-fi.com/GoldenHandz" class="cta-btn gold" target="_blank">Support on Ko-fi</a>
         </div>
     </section>
