@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldenHandz Agri & Media LLC | Land Stewardship & Permaculture</title>
+    <style>
+        :root {
+            --bg-color: #121614;
+            --card-bg: #1a221e;
+            --accent-gold: #d4af37;
+            --accent-green: #2e5a27;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border-color: #2e3d33;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background-color: var(--accent-green);
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--accent-gold);
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: var(--accent-gold);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .location-badge {
+            display: inline-block;
+            background: var(--border-color);
+            color: var(--accent-gold);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: var(--accent-gold);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 12px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--accent-gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-candles: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>GoldenHandz</h1>
+            <div class="subtitle">Agriculture & Media Soulutions</div>
+            <div class="location-badge">Technical Agri-Sovereignty • Soil Rejuvenation • Empowered Media</div>
+        </header>
+
+        <section>
+            <h2>Mission Statement</h2>
+            <p>Bridging physical land stewardship, microclimate intelligence, and open-source media on the Big Island of Hawaiʻi. GoldenHandz is dedicated to reclaiming local food independence, revitalizing soil biology, and transforming overgrown spaces into low-maintenance, high-yield ecosystems. We honor pre-existing structural assets and work in harmony with Pacific volcanic microclimates to cultivate mind, body, spirit, and land.</p>
+        </section>
+
+        <section>
+            <h2>Field Work & Gallery</h2>
+            <p>From terraced bed creation to integrating high-vitality crops straight into the earth's natural circuit—transforming vision into tangible living reality.</p>
+            
+            <div class="gallery">
+                <img src="3915.jpg" alt="Land clearing and biomass staging">
+                <img src="3917.jpg" alt="Terraced soil prep and stewardship">
+                <img src="3959.jpg" alt="Active garden growth and rock alignment">
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 GoldenHandz Agri & Media LLC. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
+
